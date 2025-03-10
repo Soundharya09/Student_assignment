@@ -1,0 +1,19 @@
+<div class="card user-card">
+    <div class="card-header">
+      <h2>User Profile</h2>
+    </div>
+    <div class="card-body">
+      <div class="info-row">
+        <span class="label">Username:</span>
+        <span class="value">{{ user.username }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Email:</span>
+        <span class="value">{{ user.email }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Status:</span>
+        <span class="value status-{{ user.status.toLowerCase() }}">{{ user.status }}</span>
+      </div>
+    </div>
+  </div>

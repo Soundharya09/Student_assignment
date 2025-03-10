@@ -1,0 +1,19 @@
+<div class="card admin-card">
+    <div class="card-header">
+      <h2>Admin Profile</h2>
+    </div>
+    <div class="card-body">
+      <div class="info-row">
+        <span class="label">Name:</span>
+        <span class="value">{{ admin.name }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Role:</span>
+        <span class="value">{{ admin.role }}</span>
+      </div>
+      <div class="info-row">
+        <span class="label">Access Level:</span>
+        <span class="value access-{{ admin.accessLevel.toLowerCase() }}">{{ admin.accessLevel }}</span>
+      </div>
+    </div>
+  </div>
